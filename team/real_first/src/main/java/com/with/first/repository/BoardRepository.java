@@ -13,7 +13,7 @@ import java.util.List;
 
 public interface BoardRepository extends JpaRepository<Board, Long> {
 
-    @Query("select b from Board_AI b where b.bno =:bno")
+    @Query("select b from Board b where b.bno =:bno")
     Object getBoard(@Param("bno") Long bno);
 
 //    @Query("select b,w from Board b left join b.writer w")
