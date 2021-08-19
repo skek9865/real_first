@@ -51,6 +51,7 @@ public class Api_AIController {
         return HttpStatus.OK;
     }
 
+    @CrossOrigin
     @DeleteMapping(value = "/delete_AI/{bno}")
     public HttpStatus delete(@PathVariable("bno") Long bno){
 
